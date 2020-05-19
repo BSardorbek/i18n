@@ -1,0 +1,29 @@
+{{#each news}}
+<h1>{{{@root.__ "PHONE"}}}:{{phone}}</h1>
+<h1>{{{@root.__ "ADDRESS"}}}:{{address}}</h1>
+{{/each}}
+<div>
+    <ul>
+        <li><a href="/uz">Uz</a></li>
+        <li><a href="/kr">Kr</a></li>
+    </ul>
+</div>
+
+<div>
+    <form action="/" method="post">
+        <label for="">phone</label><br>
+        <input type="text" name="phone"><br>
+        <br><label for="">Addres</label><br>
+        <label>Uz</label>
+        <input type="text" name="address_uz"><br>
+        <label>Kr</label>
+        <input type="text" name="address_kr"><br>
+        <button type="submit">ok</button>
+    </form>
+</div>
+
+<ul>
+    <li>
+        <a href="/">home</a>
+    </li>
+</ul>
